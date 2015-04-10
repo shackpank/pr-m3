@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'pr/m3'
+
+main_branch = ARGV[0] || 'master'
+
+Pr::M3.update_all_with(main_branch)
